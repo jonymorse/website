@@ -122,8 +122,8 @@ const PublicationsPage = () => {
       year: "2024",
       volume: "11111",
       doi: "10.1002/alr.23458",
-      image: "/images/publications/edge-paper.jpg",
-      pdfUrl: "/pdfs/Int Forum Allergy Rhinol - 2024 - Bidwell - Real‐time augmentation of diagnostic nasal endoscopy video using AI‐enabled.pdf"
+      image: `${process.env.PUBLIC_URL}/images/publications/edge-paper.jpg`,  // Updated line
+      pdfUrl: `${process.env.PUBLIC_URL}/pdfs/Int Forum Allergy Rhinol - 2024 - Bidwell - Real‐time augmentation of diagnostic nasal endoscopy video using AI‐enabled.pdf`  // Updated line
     },
     {
       title: "Enhancing nasal endoscopy: Classification, detection, and segmentation of anatomic landmarks using a convolutional neural network",
@@ -132,10 +132,11 @@ const PublicationsPage = () => {
       year: "2024",
       volume: "14:1521–1524",
       doi: "10.1002/alr.23384",
-      image: "/images/publications/cnn-paper.jpg",
-      pdfUrl: "/pdfs/Int Forum Allergy Rhinol - 2024 - Ganeshan - Enhancing nasal endoscopy  Classification  detection  and segmentation of.pdf"
+      image: `${process.env.PUBLIC_URL}/images/publications/cnn-paper.jpg`,  // Updated line
+      pdfUrl: `${process.env.PUBLIC_URL}/pdfs/Int Forum Allergy Rhinol - 2024 - Ganeshan - Enhancing nasal endoscopy  Classification  detection  and segmentation of.pdf`  // Updated line
     }
   ];
+  
 
   return (
     <div className="p-8 max-w-6xl mx-auto bg-white dark:bg-gray-900 text-black dark:text-white">

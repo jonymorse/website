@@ -2,7 +2,6 @@ import { BookOpen, Award, Radio, Lightbulb, FileText, Search } from 'lucide-reac
 import PublicationsPage from '../pages/PublicationsPage';
 import ContactPage from '../pages/ContactPage';
 
-
 const HomePage = () => {
   return (
     <div className="max-w-[1800px] mx-auto px-8 py-12 bg-white dark:bg-gray-900 text-black dark:text-white">
@@ -21,7 +20,7 @@ const HomePage = () => {
             <div className="md:flex items-start gap-16">
               <div className="md:w-1/3 mb-8 md:mb-0 flex-shrink-0">
                 <img 
-                  src="/images/profile.jpg" 
+                  src={`${process.env.PUBLIC_URL}/images/profile.jpg`} 
                   alt="Jonathan Morse"
                   className="rounded-xl shadow-lg w-64 h-64 object-cover object-center mx-auto"
                 />
@@ -29,18 +28,17 @@ const HomePage = () => {
               <div className="md:w-2/3">
                 <div className="flex justify-between items-center mb-6">
                   <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">Jonathan Morse</h1>
-                <a
-                href="/pdfs/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 
-                            bg-primary-light dark:bg-primary-dark text-white rounded-lg 
-                            hover:bg-primary-hoverLight dark:hover:bg-primary-hoverDark transition-colors"
-                >
-                <FileText className="w-5 h-5" />
-                Resume
-                </a>
-
+                  <a
+                    href={`${process.env.PUBLIC_URL}/pdfs/Resume.pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 
+                                bg-primary-light dark:bg-primary-dark text-white rounded-lg 
+                                hover:bg-primary-hoverLight dark:hover:bg-primary-hoverDark transition-colors"
+                  >
+                    <FileText className="w-5 h-5" />
+                    Resume
+                  </a>
                 </div>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
                   Masters Student in Computer Science
