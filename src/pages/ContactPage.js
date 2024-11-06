@@ -17,7 +17,7 @@ const ContactPage = () => {
   };
 
   const handleCalendarClick = () => {
-    window.open('https://calendar.google.com/calendar/embed?src=dbf157548b6d2956f4b0cb7630b4a16fc2d8e7df338c1d1572f62975ea343fe3%40group.calendar.google.com&ctz=America%2FChicago', '_blank');
+    window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0uJ4QDmcH9FHMTIy-2AtZ30BTSPqCS-rsbxVDsbv-Q7zTXovOUiw6jQZMcs8Gxyl-vG2YmjRlG', '_blank');
   };
 
   return (
